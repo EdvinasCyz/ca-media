@@ -12,6 +12,7 @@ main {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1500px;
 }
 section {
   padding: 1rem;
