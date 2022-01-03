@@ -2,8 +2,9 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   background-color: bisque;
+  margin: 0;
 }
 
 main {
@@ -41,9 +42,9 @@ article {
   background-color: white;
 }
 
-.sideArticle{
-    background-color: white;
-    padding: 1rem;
+.sideArticle {
+  background-color: white;
+  padding: 1rem;
 }
 
 .sideArticle h2,
@@ -52,10 +53,21 @@ article {
 }
 
 @media (max-width: 1200px) {
-    .mainContent,
-    .sideContent {
-        width: 100%;
-    }
+  .mainContent,
+  .sideContent,
+  main {
+    width: 100%;
+  }
 
-    
+  section{
+      padding: 0;
+  }
+
+  .mainContent article:nth-child(1){
+      margin-top: 0;
+  }
+
+  .mainContent article:last-child{
+    margin-bottom: 0;
+}
 }
